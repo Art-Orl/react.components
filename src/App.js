@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import { Search } from './Components/Search/Search';
+import { Card } from './Components/Card/Card';
 import './App.css';
+
+import { cards } from './cardsContent';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Search />
+      <div className="cards__container">
+        {cards.map((item) => (
+          <Card
+            name={item.name}
+            text={item.text}
+            img={item.img}
+            category={item.category}
+            liked={item.liked}
+          />
+        ))}
+      </div>
     </div>
   );
 }
