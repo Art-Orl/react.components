@@ -3,12 +3,3 @@
   background-color: #726060;
   min-height: 100vh;
 }
-
-.cards__container {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-  flex-wrap: wrap;
-}

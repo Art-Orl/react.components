@@ -1,26 +1,13 @@
 import { Search } from './Components/Search/Search';
-import { Card } from './Components/Card/Card';
+import { CardsField } from './Components/CardsField/CardsField';
+
 import './App.css';
 
-import { cards } from './cardsContent';
-
-function App() {
+export function App() {
   return (
     <div className="App">
       <Search />
-      <div className="cards__container">
-        {cards.map((item) => (
-          <Card
-            name={item.name}
-            text={item.text}
-            img={item.img}
-            category={item.category}
-            liked={item.liked}
-          />
-        ))}
-      </div>
+      <CardsField />
     </div>
   );
 }
-
-export default App;

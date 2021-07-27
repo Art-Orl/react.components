@@ -1,0 +1,38 @@
+.likedBlock {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.likedBlock__total {
+  display: flex;
+  align-items: center;
+}
+
+.likedBlock__list {
+  display: flex;
+  padding: 0;
+  margin-right: 5px;
+}
+
+.likedBlock__list > li {
+  list-style: none;
+}
+
+.likedBlock__amount {
+  opacity: 0.3;
+}
+
+.likedBlock__button {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: inherit;
+  border: none;
+}
+
+.likedBlock__button:hover {
+  transform: scale(1.2);
+  fill: #383838;
+}

@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: center;
   margin: 0px auto 30px;
-  background: url(https://sport.mail.ru/img/_main/subnav.png);
 }
 .dotted {
   padding: 2.25em 1.6875em;
@@ -39,20 +38,14 @@
   -webkit-background-size: 3px 3px;
   -moz-background-size: 3px 3px;
   background-size: 10px 10px;
-
-  width: 100%;
-  height: 50px;
 }
 
 .search__content {
   display: flex;
   align-items: center;
-  justify-content: center;
   padding: 5px 15px;
   border: solid 3px blueviolet;
-  /* width: 50%; */
   border-radius: 30px;
-  z-index: 2;
   background-color: #fff;
 }
 
