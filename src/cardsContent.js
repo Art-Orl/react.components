@@ -1,4 +1,4 @@
-export let cards = [
+export const cards = [
   {
     text: 'Zen and the Art of UX Dedign',
     img: '01.jpg',
@@ -23,11 +23,6 @@ export let cards = [
     text: 'How to talk like a Product Designer',
     img: '03.jpg',
     category: 'Articles',
-    liked: [
-      { avatar: 'avatar/004.jpg' },
-      { avatar: 'avatar/002.jpg' },
-      { avatar: 'avatar/003.jpg' },
-    ],
   },
   {
     text: 'GSAP Animation',

@@ -5,26 +5,30 @@ import './Card.css';
 export function Card({ liked, text, img, category }) {
   return (
     <div className="card__container">
-      <div className="card__content">
-        <div className="fg">
+      <div className="card">
+        <div className="card__content">
           <img className="card__img" width={230} height={180} src={img} alt="ph" />
           <h4 className="card__title">{text}</h4>
           <p className="card__text">
-            Added by<span className="text_green">Awwwards Team</span> in{' '}
+            Added by <span className="text_green">Awwwards Team</span> in{' '}
             <span className="text_bold">{category}</span>
           </p>
         </div>
         <div className="likedBlock">
-          <ul className="likedBlock__list">
-            {liked
-              ? liked.map((item) => (
-                  <li>
-                    <img width={25} src={item.avatar} />
-                  </li>
-                ))
-              : null}
-          </ul>
+          <div className="likedBlock__total">
+            <ul className="likedBlock__list">
+              {liked
+                ? liked.map((item) => (
+                    <li>
+                      <img width={25} src={item.avatar} />
+                    </li>
+                  ))
+                : null}
+            </ul>
+            {liked ? <div className="likedBlock__amount">+{liked.length}</div> : null}
+          </div>
           <svg
+            className="likedBlock__button"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
